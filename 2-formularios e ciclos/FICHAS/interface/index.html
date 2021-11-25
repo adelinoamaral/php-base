@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .altura{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container altura">
+        <form action="lista_dados.php" method="POST">
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword">Senha</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Senha" name="password">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputEndereco">Endereço</label>
+              <input type="text" class="form-control" id="inputEndereco" placeholder="morada 1" name="endereco1">
+            </div>
+
+            <div class="form-group">
+              <label for="inputAddress2">Endereço 2</label>
+              <input type="text" class="form-control" id="inputEndereco2" placeholder="morada 2" name="endereco2">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCidade">Cidade</label>
+                <input type="text" class="form-control" id="inputCidade" name="cidade">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">Distrito</label>
+                <select id="inputState" class="form-control" name="distrito">
+                  <option selected>Escola...</option>
+                  <option>Viseu</option>
+                  <option>Aveiro</option>
+                  <option>Porto</option>
+                  <option>Lisboa</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputCodPostal">Código Postal</label>
+                <input type="text" class="form-control" id="inputCodPostal" name="cod_postal" placeholder="código postal">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" name="marca">
+                <label class="form-check-label" for="gridCheck">
+                  Marque para relembrar
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
