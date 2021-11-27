@@ -39,3 +39,4 @@ Muitas linguagens possuem funções que fazem essas conversões sem recorrer a u
 mas no fundo elas usam algum predefinido (geralmente o default que está configurado no 
 ambiente em que o código executa). Algumas permitem mudança ou configuração do fuso-horário, 
 mas nem sempre é possível.
+https://hkotsubo.github.io/blog/2019-05-02/o-que-e-timestamp
