@@ -1,42 +1,50 @@
 <?php
 
     /**
-     * O PHP suporta a passagem de argumentos por valor (o padrão), 
-     * passagem por referência, e valores padrões. 
+     * Date Update: 27/11/2021
+     * 
+     * Scope de uma variável PHP (PHP variable scope)
+     * Por vezes, poderá haver necessidade de declarar variáveis que necessitem de existir 
+     * durante todo o código (variáveis globais) ou apenas em certos momentos do código 
+     * (variáveis locais). Chama-se a esta propriedade scope. Por defeito, as variáveis são 
+     * locais, pelo que não estão acessíveis em todo o programa.
+     * 1.	Variável local (scope local)
+     * 2.	Variável global (scope local)
+     * 3.	Variável estática (scope local)
+     * 4.	Parâmetro de uma função (scope local)
+     * Quando o acesso à variável está fora do scope da variável, o PHP causa um erro 
+     * undefined variable.
+     * 
+     * 
+     * O PHP suporta a passagem de argumentos "por valor" (o padrão), 
+     * passagem "por referência", e valores padrões. 
      * Lista de argumentos de tamanho variável e argumentos nomeados também são suportadas.
      * Vamos explorar estes conceitos ao longo deste tema.
+     * 
+     * PASSGEM POR VALOR E POR REFERÊNCIA
+     * Por padrão, argumentos de função são passados por valor, o valor do argumento 
+     * pode mudar dentro da função, mas não é alterado fora da função. 
+     * Para permitir que uma função modifique os seus argumentos, estes devem ser passados 
+     * por referência.
      */
 
     // definição de cada passo em metros
     define('CADA_PASSO',0.8);
 
     /**
-     * PASSGEM POR VALOR E POR REFERÊNCIA
-     * Por padrão, argumentos de função são passados por valor o valor do argumento 
-     * pode mudar dentro da função, mas não é alterado fora da função. 
-     * Para permitir que uma função modifique os seus argumentos, estes devem ser passados 
-     * por referência.
-     */
-
-    /**
      * A variável passo diz-se local porque está definida dentro da função.
      * Se fizer uso desta variável fora da função será visualizado o erro
-     * undefined variable.
+     * "undefined variable".
      */
     function mostra_passo(){
-        $passo = CADA_PASSO;
+        $passo = CADA_PASSO;    // $passo é uma variável local
         return $passo;  // return faz com que a função devolva um valor.
     }
 
     /**
-     * A função PassosPorQuilometro
-     * determina quantos quilometros existem em $passos
-     * 
-     * A função PassosPorQuilometro aceita um parâmetro, $passos.
-     * Este parâmetro, que é uma variável, só é acessível dentro
-     * da função, como tal chamamos variável local.
+     * Description: determina quantos quilometros existem em $passos
+     * Parâmetros: $passos - só é acessível dentro da função.
      */
-    
     function PassosPorQuilometro($passos)
     {
         return $passos * CADA_PASSO;
@@ -44,10 +52,9 @@
 
 
     /**
-     * A função km2mi
-     * determina o número de milhas por quilometro.
+     * Description: determina o número de milhas por quilometro.
      * A variável $total é visivel dentro deste ficheiro,
-     * como tal, chamamos variável global e aplicamos a palavra global.
+     * como tal, chamamos "variável global" e aplica-se a palavra global.
      */
     function km2mi($quilometros)
     {
@@ -58,11 +65,10 @@
     
 
     /**
-     * A função percorre
-     * determina e apresenta o número de quilometros
-     * Trata-se de uma variável local porque é reconhecida dentro
+     * Description: determina e apresenta o número de quilometros.
+     * $ptotal - trata-se de uma variável local porque é reconhecida dentro
      * da função, no entanto guarda os valores entre as chamadas da
-     * função ($ptotal guarda valores entre chamadas da função).
+     * função.
      */
     function percorre($quilometros)
     {
@@ -125,6 +131,4 @@
     echo "Fatorial de 7 --> " . Fatorial(7) . "<br>\n";
 
     echo "--------------------------------------------------------<br>";
-
-    
 ?>

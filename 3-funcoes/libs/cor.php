@@ -1,5 +1,5 @@
 <?php
-
+    // Permite definir os caracteres portugueses, por exemplo 5ª
     header('Content-Type: text/html; charset=UTF-8');
 
     // definição de constantes
@@ -11,13 +11,12 @@
     /**
      * A função pode devolver valores recorrendo à instrução opcional return. 
      * Qualquer tipo pode ser devolvido, incluindo arrays e objetos. 
-     * Isto faz com que a função termine a sua execução imediatamente e passe o controle 
-     * na linha onde a função foi chamada. 
+     * Return faz com que a função termine a sua execução imediatamente e passe 
+     * o controle à linha onde a função foi chamada. 
      */
     
     /**
-     * passagem por valor
-     * função getRGB aceita o parâmetro $color por valor com
+     * A função getRGB aceita o parâmetro $color por valor com
      * um valor por default
     */
     function getRGB($code=RED)
