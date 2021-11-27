@@ -81,6 +81,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <body>
     <h2>Contact Us</h2>
     <p>Please fill in this form and send us.</p>
+    <!-- Repare natribuição do atributo value, toma o valor inserido anteriormente. -->
     <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
         <p>
             <label for="inputName">Name:<sup>*</sup></label>
