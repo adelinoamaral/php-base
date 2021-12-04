@@ -47,6 +47,7 @@ Vagrantfile
 *.jpg
 *.png
 *.rtf
+*.txt
 
 
 #-------------------------
