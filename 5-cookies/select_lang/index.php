@@ -19,37 +19,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Cookies</title>
-	<style>
-		.container{
-			width: 600px;
-			margin: 100px auto;
-		}
-		.row{width: 100%;}
-		.col-md-2{
-			width: 30%;
-			height: 95px;
-			margin: 0;
-			padding: 0;
-			float: left;
-		}
-		.col-md-10{
-			width: 70%;
-			height: 95px;
-			margin: 0;
-			padding: 0;
-		}
-		.bandeira{height: 95px;}
-	</style>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 	<div class="container">
 		<h2>Selecione o idioma: </h2>
 		<div class="row">
 			<div class="col-md-2">
-				<a href="criacookie.php?lingua=pt-pt"><img src="pt.png" alt="Portugal" class="bandeira"></a>
+				<a href="criacookie.php?lingua=pt-pt">
+					<img src="pt.png" alt="Portugal" class="bandeira">
+				</a>
 			</div>
 			<div class="col-md-10">
-				<a href="criacookie.php?lingua=es"><img src="es.jpg" alt="" class="bandeira"></a>
+				<a href="criacookie.php?lingua=es">
+					<img src="es.jpg" alt="" class="bandeira">
+				</a>
 			</div>
 		</div>
 	</div>

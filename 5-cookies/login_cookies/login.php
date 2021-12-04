@@ -18,7 +18,7 @@
 <body>
 	<?php
 	
-		if(entrou == true){
+		if($entrou == true){
 			$autenticar = true;
 			// verifica se a checkbox ficou ativada
 			if(isset($_POST['recordar'])){

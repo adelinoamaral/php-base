@@ -25,10 +25,6 @@
 		} else {
 			echo "Os Cookies estão desabilitados.";
 		}
-	
-	
-	
-	
 
 	?>
 </body>
