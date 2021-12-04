@@ -1,7 +1,7 @@
 <?php
 
-// estamos a indicar que o primeiro índice começa em 1, por defeito toma o valor 0 (ZERO)
-$meses = array (1 => 'Janeiro', 
+        // estamos a indicar que o primeiro índice começa em 1, por defeito toma o valor 0 (ZERO)
+        $meses = array (1 => 'Janeiro', 
                 'Fevereiro', 
                 'Março', 
                 'Abril', 
@@ -15,10 +15,10 @@ $meses = array (1 => 'Janeiro',
                 'Dezembro'
         );
         
-/*
-Outra forma de escrever um array.
+    /*
+    Outra forma de escrever um array.
 
-$meses = ['Janeiro', 
+        $meses = ['Janeiro', 
             'Fevereiro', 
             'Março', 
             'Abril', 
@@ -32,9 +32,10 @@ $meses = ['Janeiro',
             'Dezembro'
         ];
 
-*/
+    */
 
     /**
+     * Data: 05-10-2020
      * Descrição:  Converte os elementos da string $valueStr num array
      * o parâmtero opcional não deve ser o primeiro na lista
      * Return: devolve um array com os elementos da string

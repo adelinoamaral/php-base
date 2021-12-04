@@ -28,12 +28,7 @@
     
 <div>
     <p>Utilize este formulários para adicionar um evento:</p>
-    
-	<!-- PREVENÇÃO DE ATAQUES - SEGURANÇA
-		 a função htmlspecialchars() converte caracteres especiais em HTML entities. 
-		 Por exemplo, converte o carácter  < em &lt;
-		 Esta conversão previne ataques por injection HTML ou javascript
-	-->
+   
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 
         <p>Nome Evento: <input type="text" name="nome" size="30" /></p>

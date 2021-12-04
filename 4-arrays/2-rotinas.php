@@ -2,10 +2,15 @@
 
     include "lib/utils.php";
 
+    /**
+     * O presente ficheiro disponibiliza pequenos exemplos que
+     * permitem explicar o tratamento de arrays
+     */
+
     // Considera a string com o separador : entre elementos
     $data = "foo:*:1023:1000::/home/foo:/bin/sh";
 
-    // atribui cada elemento de um array a uma variável
+    // atribui cada elemento de um array a uma variável individual
     list($user, $pass, $uid, $gid, $gecos, $home, $shell) = divideFaixa($data);
 
     echo "Username: " . $user . "<br>"; // foo
@@ -27,23 +32,13 @@
 
     // -------------------------------------------------------------
     
+    // um format de array muito utilizado nas frameworks codeigniter e laravel
+    $result = [
+                "name" => "Adelino", 
+                "age" => "16", 
+                "lastname" => "Amaral"
+            ];
 
-    /*
-        REMOVER VALORES DUPLICADOS DE UM ARRAY
-        You can use the array_unique() function to remove the duplicate elements or vlaues form an array. 
-        If the array contains the string keys, then this function will keep the 
-        first key encountered for every value, and ignore all the subsequent keys.
-    */
-    $array = array("A1" => "moon", 
-                   "star", 
-                   "A2" => "moon", 
-                   "star", 
-                   "sky"
-            );
-
-    // Deleting the duplicate items
-    $result = array_unique($array);
-    // Observa a apresentação dos índices do array
     foreach($result as $key => $value)
     {
         echo $key . " - " . $value . "<br>";
@@ -78,7 +73,7 @@
 // -------------------------------------------------------------
 
     $color_array = array("Red","Blue","Green","Yellow","Brown");
-    // returns the sequence of elements from the array array as specified 
+    // returns the sequence of elements from the array as specified 
     // by the offset and length parameters.
     $sliced = array_slice($color_array,1,3);
 
@@ -86,26 +81,20 @@
         echo $valor . "<br>";
     }
 
-    echo "<br><br><br>";
+// -------------------------------------------------------------
 
+    // cria um array
+    $arr = array(1,2,3,6,4,8,9);
 
-    // -------------------------------------------------------------
-    
-    $color_array1 = array("Red","Blue","Green");
-    $color_array2 = array("Yellow","Brown");
-    
-    // Transforma os 2 arrays num só array
-    $colors = array_merge($color_array1,$color_array2);
-
-    foreach($colors as $key => $valor){
-        echo $key . " => " . $valor . "<br>";
+    // percorre o array. É utilizada uma referência específica (&) onde os valores
+    // do array são alterados.
+    foreach ($arr as $valor) {
+        // altera o valor refereciado por & associado à variável $valor
+      $valor = $valor * 2;
     }
-
-    // Outra forma de apresentação (debugging) personalizada
-    echo "<br><br><br>";
-    echo("<pre>");
-    print_r($colors);
-    echo("</pre>");
-
     
+    // mostra o valor do array
+    echo '<pre>';
+    print_r($arr);
+    echo '</pre>';
 ?>

@@ -53,6 +53,7 @@ Vagrantfile
 # Work directory
 #-------------------------
 documentacao/
+APONTAMENTOS/
 
 #-------------------------
 # Composer
