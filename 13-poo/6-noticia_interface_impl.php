@@ -2,6 +2,8 @@
     include_once("classes/noticia.interface.class.php");
 
     // a classe Noticia implementa os métodos da interface
+    // Se iNoticia é uma interface então deve-se implementar,
+    // na classeNoticia, os métodos definidos na interface
     class Noticia implements iNoticia
     {
         protected $titulo;

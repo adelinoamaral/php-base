@@ -23,7 +23,7 @@
         para implmentar funcionalidades iguais em diferentes objetos.
 
         Vamos transformar a classe Noticia numa classe abstrata. Depois temos que
-        herdar as suas características na sub-classe NoticiaPrincipal.
+        herdar as suas características na subclasse NoticiaPrincipal.
 
         Os métodos abstratos não devem conter código, apenas definição. 
         Quando criamos um método abstrato, fazemos com que seja implementado 
@@ -46,12 +46,12 @@
     }
 
 
-    // Não posso escrever a seguinte instrução
+    // Não posso escrever a seguinte instrução porque a classe é abstrata
     //$not = new Noticia();
 
     // A classe abstrata Noticia serve como modelo para a classe NoticiaTop
-    // ou outra qualquer. Cada uma implementa os métodops abstratos d acordo
-    // com as suas regras de negócio
+    // ou outra qualquer. Cada uma implementa os métodos abstratos de acordo
+    // com as suas regras de negócio.
 
     class NoticiaTopo extends Noticia{
         // Somos obrigado a implementar os métodos 
@@ -67,9 +67,9 @@
         }
     }
 
-    $nt = new NoticiaTopo();
-    $nt->setTitulo("CORONA");
-    $nt->setTexto("Mau como o diabo");
-    $nt->mostraNoticia();
+    // $nt = new NoticiaTopo();
+    // $nt->setTitulo("CORONA");
+    // $nt->setTexto("Mau como o diabo");
+    // $nt->mostraNoticia();
     
 ?>

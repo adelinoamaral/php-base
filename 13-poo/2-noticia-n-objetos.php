@@ -8,7 +8,7 @@
     // atribuiu valores aos atributos/propriedades do objeto referenciado por $not1
     $not1->titulo = 'Novo curso de PHP Avançado';
     $not1->texto = 'Este curso contém os seguinte tópicos: POO, XML, etc.';
-
+    // chama o método mostraNoticia() que está definido na classe Noticia
     $not1->mostraNoticia();
 
     echo "<br><br>";
@@ -17,5 +17,8 @@
     $not2->titulo = 'Curso de PHP - POO';
     $not2->texto = 'Estudo da Linguagem Orientada a Objetos.';
     $not2->mostraNoticia();
+
+    // Conclusão: 2 referência diferentes da mesma classe com valores 
+    // nos atributos diferentes.
 
 ?>

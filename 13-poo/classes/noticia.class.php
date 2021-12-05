@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * A classe Noticia possui as propriedades públicas $titulo e $texto
+ * e os métodos setTitulo(), setTexto(), mostraNoticia()
+ */
 class Noticia
 {
     public $titulo;
@@ -8,6 +12,9 @@ class Noticia
      // Define o método setTitulo que recebe um parâmetro
     function setTitulo($valor)
     {
+        // A pseudo-variável $this fica disponível quando um método 
+        // é chamado a partir do contexto de um objeto. 
+        // $this é o valor do objeto chamado.
         $this->titulo = $valor;
     }
 

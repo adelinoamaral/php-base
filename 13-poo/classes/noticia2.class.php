@@ -4,7 +4,7 @@ class Noticia
     public $titulo;
     public $texto;
 
-
+    // construtor da classe Noticia
     function __construct($valor_tit, $valor_txt)
     {
         // A __CLASS__é uma constante mágica que contém o nome da classe na qual ela ocorre. 

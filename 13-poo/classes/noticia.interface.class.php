@@ -8,7 +8,8 @@
         ou classes implementarem.
         
         Interfaces são definidas utilizando a palavra-chave interface, devem ter definições 
-        para todos os métodos listados na interface. 
+        para todos os métodos listados na interface.
+        
         As classes podem implementar mais de uma interface, listando cada interface 
         separada por um espaço.
 

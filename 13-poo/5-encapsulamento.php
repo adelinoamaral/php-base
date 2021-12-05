@@ -2,9 +2,9 @@
 
     include_once('classes/noticia_encapsulamento.class.php');
 
-    // esta nova classe herda as características da classe NoticiaPrincipal
     class NoticiaUltimaHora extends NoticiaPrincipal
     {
+        // reescreve o método da classe pai
         function mostraNoticia()
         {
             echo "<center>";
@@ -16,7 +16,7 @@
 
     $titulo = 'Programação Orientada Objetos';
     $texto = 'Um grande tema a explorar.';
-    $imagem = 'heranca.jpeg';
+    $imagem = 'heranca.jpg';
 
     // cria uma instância da classe NoticiaPrincipal
     $not_princ = new NoticiaPrincipal();

@@ -2,7 +2,10 @@
 
     include_once('classes/noticia_final.class.php');
 
-    // Este código gera o seguinte ERRO
+    // A classe NoticiaTopo tem o método final function mostraNoticia()
+    // que não pode ser reescrito na subclasse.
+    // Como o método NoticiaPrincipal herda a classe NoticiaTopo,  
+    // o erro seguinte surgirá:
     // Fatal error: Class NoticiaPrincipal may not inherit from final class (Noticia) 
 
     class NoticiaPrincipal extends NoticiaTopo

@@ -47,6 +47,13 @@
         return $array;
     }
 
+    
+    // passar um array como parâmetro
+    function showMonth($month){
+        foreach($month as $indice => $valor)
+            echo $indice . ' > ' . $valor . '<br>';
 
+        //print_r($month);
+    }
 
 ?>

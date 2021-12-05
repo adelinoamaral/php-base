@@ -12,7 +12,7 @@
     $not->mostraNoticia();
 
     // Atribuição de uma valor à propriedade static $nome_jornal
-    Noticia::$nome_jornal = "AAAA";
+    Noticia::$nome_jornal = "Jornal Navarro";
 
     // Acesso à propriedade static da classe Noticia
     echo "<p>" . Noticia::$nome_jornal . "</p>";

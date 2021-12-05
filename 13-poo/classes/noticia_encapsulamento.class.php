@@ -1,7 +1,8 @@
 <?php
     /*
         O encapsulamento possibilita ao programador restringir ou libertar o acesso às 
-        propriedades e métodos das classes. 
+        propriedades e aos métodos das classes.
+
         Aplica-se este conceito através dos operadores:
         Public : uma propriedade ou método public permitem o acesso direto às suas 
         informações em qualquer script, a qualquer momento. 
@@ -58,6 +59,7 @@
             return $this->imagem;
         }
 
+        // reescreve o método da classe pai|base
         public function mostraNoticia()
         {
             echo "<center>";

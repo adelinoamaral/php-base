@@ -1,8 +1,8 @@
 <?php
 
     /*
-        Classes definidas com a palavra-chave "final" não podem ser herdadas por outras classes. 
-        Quando um método é definido dessa forma, as subclasses que o herdarem não poderão sobrescrevê-los.
+        Classes definidas com a palavra-chave "final" não podem 
+        ser herdadas por outras classes. 
     */
 
     final class Noticia
@@ -29,6 +29,10 @@
         }
     }
 
+    /*
+        Quando um método é definido palavra-chave "final", 
+        as subclasses que o herdarem não poderão sobrescrevê-los.
+    */
     class NoticiaTopo
     {
         protected $titulo;

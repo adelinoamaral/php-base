@@ -11,6 +11,11 @@
         Cria uma instância da classe Noticia
         A palavra new permite criar um objeto a partir da classe.
         Portanto, um objeto é uma variável criada a partir de uma classe.
+        No entanto, cada variável contém uma referência a um objeto ao 
+        não uma cópia de todo o objeto.
+
+        Se não houver argumentos a serem passados para o construtor da classe, 
+        os parênteses após o nome da classe podem ser omitidos.
     */
     $not = new Noticia();
 

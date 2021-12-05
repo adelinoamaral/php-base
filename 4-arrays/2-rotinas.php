@@ -19,16 +19,8 @@
 
     // -------------------------------------------------------------
 
-    // passar um array como parâmetro
-    function showMonth($month){
-        foreach($month as $indice => $valor)
-            echo $indice . ' > ' . $valor . '<br>';
-
-        //print_r($month);
-    }
-
+    // Passagem de um array como parâmetro
     showMonth($meses);
-
 
     // -------------------------------------------------------------
     
@@ -70,7 +62,7 @@
     echo "<br><br><br>";
 
 
-// -------------------------------------------------------------
+    // -------------------------------------------------------------
 
     $color_array = array("Red","Blue","Green","Yellow","Brown");
     // returns the sequence of elements from the array as specified 
@@ -81,7 +73,7 @@
         echo $valor . "<br>";
     }
 
-// -------------------------------------------------------------
+    // -------------------------------------------------------------
 
     // cria um array
     $arr = array(1,2,3,6,4,8,9);
@@ -97,4 +89,23 @@
     echo '<pre>';
     print_r($arr);
     echo '</pre>';
+
+    // -------------------------------------------------------------
+
+    // ALGUMAS FUNÇÕES INTERESSANTES PARA INVESTIGAR
+
+    // in_array () é usado para verificar se um valor ou subarray faz parte de outro
+    // array. in_array(mixed $needle, array $haystack, bool $strict = false): bool
+
+    // O PHP disponibiliza outras funões que procuram dados num array
+    // array_key_exists()
+    // Pesquisar chaves ou índices se o array mestre/principal for um array associativo.
+    // $master_assoc_array = array("id"=>1000,"name"=>"PHP");
+    // echo array_key_exists("name",$master_assoc_array);
+    // array_search()
+    // Devolve o índice correspondente à entrada com a qual a correspondência foi encontrada
+    // $master_array = array("one","two","three");
+    // echo "Array index of 'three' is " . array_search("three", $master);
+
+    
 ?>
