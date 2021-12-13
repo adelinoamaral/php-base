@@ -32,36 +32,34 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
-        .marginTop{
-            margin-top: 150px;
-        }
-    </style>
+    <!-- Carrega a font Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Carrega os estilos -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <div class="container">
-        <div class="row marginTop">
-            <div class="col-md-6 col-md-offset-3">
-
-                <form action="processa/valida.php" method="post">
-                    <div class="form-group">
-                        <label for="InputEmail1">Endereço email</label>
-                        <input type="email" name="email" class="form-control" id="InputEmail1" placeholder="Email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="InputPassword1">Senha</label>
-                        <input type="password" name="senha" class="form-control" id="InputPassword1" placeholder="Senha" required>
-                    </div>
-                    <input type="submit" class="btn btn-primary" value="Entrar">
-                </form>
-                
-            </div>
+        <div class="col">
+            <form action="processa/valida.php" method="post">
+                <div>
+                    <label for="InputEmail1">Email</label>
+                    <input type="email" name="email" id="InputEmail1" placeholder="Insira o Email" required>
+                </div>
+                <div>
+                    <label for="InputPassword1">Senha</label>
+                    <input type="password" name="senha" id="InputPassword1" placeholder="Insira a Senha" required>
+                </div>
+                <input type="submit" value="Entrar">
+            </form>
         </div>
-    </div>    
-    <script src="js/bootstrap.min.js"></script>
+    </div>
 </body>
 </html>
