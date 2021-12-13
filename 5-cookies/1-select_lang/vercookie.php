@@ -6,12 +6,17 @@
 </head>
 <body>
 	<?php
+		/*
+			Abre a janela Inspecionar > separador Application e 
+			clica em Cookies. Analisa os valores associados ao
+			cookie criado.
+		*/
 	
 		// VERIFICA SE OS COOKIES ESTÃO HABILITADOS
 		if(count($_COOKIE) > 0) {
 			
 			if(!$_COOKIE['selecionou_idioma']){
-				header("Location: pag1.php");
+				header("Location: erro.php");
 			}
 			else if($_COOKIE['selecionou_idioma'] == "pt-pt"){
 				// redireciona para a página index_pt.php

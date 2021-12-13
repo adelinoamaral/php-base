@@ -27,12 +27,12 @@
 		<div class="row">
 			<div class="col-md-2">
 				<a href="criacookie.php?lingua=pt-pt">
-					<img src="pt.png" alt="Portugal" class="bandeira">
+					<img src="images/pt.png" alt="Portugal" class="bandeira">
 				</a>
 			</div>
 			<div class="col-md-10">
 				<a href="criacookie.php?lingua=es">
-					<img src="es.jpg" alt="" class="bandeira">
+					<img src="images/es.jpg" alt="" class="bandeira">
 				</a>
 			</div>
 		</div>

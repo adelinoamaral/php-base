@@ -13,6 +13,11 @@
 
         Deve chamar a função session_start() no início da página, ou seja, antes de qualquer 
         saída gerada pelo script.
+
+        Sessões e cookies guardam os dados globalmente, logo acessíveis por todo o site.
+        Recorde que as sessões são armazenadas no servidor e os cookies são preservados 
+        no browser (no lado do cliente).
+        
     */
 
     session_start();
