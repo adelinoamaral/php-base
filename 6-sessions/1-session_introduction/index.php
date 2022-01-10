@@ -5,7 +5,7 @@
         deve iniciar a sessão.
 
         session_start() - indica que a sessão vai ser iniciada - primeira função a aparecer
-        cria automaticamente o SID
+        cria automaticamente o SID, pode observar no cookie criado na ferramenta do browser.
 
         A função session_start() primeiro verifica se já existe uma sessão pela presença de
         um ID de sessão. Se a sessão já estiver sido iniciada, é possível a manipulação das
@@ -20,7 +20,9 @@
         
     */
 
-    session_start();
+    if (! isset($_SESSION)) {
+        session_start();
+    }
 
     // A presente página, o formulário do login, não pode aparecer depois
     // do utilizador estar autenticado.
