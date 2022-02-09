@@ -1,3 +1,7 @@
 http://blog.thiagobelem.net/upload-de-arquivos-com-php
 http://tableless.com.br/upload-de-arquivos-com-php/
 
+https://code.tutsplus.com/tutorials/how-to-upload-a-file-in-php-with-example--cms-31763
+
+https://phppot.com/php/php-file-upload/
+
